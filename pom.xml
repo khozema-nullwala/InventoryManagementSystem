@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.accenture.lkm</groupId>
-	<artifactId>inventory-management-system</artifactId>
+	<artifactId>ims</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory-management-system Maven Webapp</name>
+	<name>Inventory Management System</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
+			<version>8.0</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -111,7 +111,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>inventory-management-system</finalName>
+		<finalName>ims</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -124,5 +124,12 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		
+		<!-- To read applicationContext for testing -->
+		<testResources>
+			<testResource>
+				<directory>src/main/webapp</directory>
+			</testResource>
+		</testResources>
 	</build>
 </project>

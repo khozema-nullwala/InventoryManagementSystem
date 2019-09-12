@@ -14,8 +14,8 @@
 	<div class="container">
 		<h1>Inventory Management System</h1>
 		<div class="navbar">
-			<a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-<%-- 			<a href="${contextRoot}/login.html"><i class="fa fa-fw fa-user"></i>Login</a>			
+			<a href="#">Home</a>
+<%-- 			<a href="${contextRoot}/login.html">Login</a>			
  --%>			
  			<a href="${contextRoot}/purchaseEntry.html">Inventory Management System</a>
 		</div>

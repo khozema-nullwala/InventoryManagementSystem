@@ -3,6 +3,7 @@ package com.accenture.lkm.web.client;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -38,10 +39,12 @@ public class VendorServiceConsumer {
 		return vendorBeanList;
 	}
 
-	public Map<String, VendorBean> getVendorBeanMap() {
-		// complete the code here to create map from vendorBeanList
-		return null;
-		
+	public Map<String, VendorBean> getVendorBeanMap() throws MicroServiceException {
+		if(vendorBeanMap == null) {
+			vendorBeanMap = getVendorBeanList().stream()
+							.collect(Collectors.toMap(vendorBean -> vendorBean.getVendorId(), vendorBean -> vendorBean));
+		}
+		return vendorBeanMap;		
 	}
 
 	public void hitVendorService() throws MicroServiceException {

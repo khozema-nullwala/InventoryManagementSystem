@@ -8,6 +8,11 @@ public class PurchaseBean {
 	private String transactionId;
 	@NotBlank
 	private String vendorName;
+	
+	// add rest of the fields here with setter and getter along with toString()
+	// refer the UMLClassDiagram image for PurchaseBean
+	
+	
 	public Integer getPurchaseId() {
 		return purchaseId;
 	}

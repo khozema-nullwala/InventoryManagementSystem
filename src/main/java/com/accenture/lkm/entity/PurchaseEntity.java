@@ -18,6 +18,9 @@ public class PurchaseEntity {
 	@Column(name = "transaction_id")
 	private String transactionId;
 	
+	// add rest of the fields, setter and getters with toString method here
+	// refer the UMLClassDiagram image for PurchaseEntity 
+	
 	public PurchaseEntity() {
 		super();
 	}
@@ -33,5 +36,5 @@ public class PurchaseEntity {
 	public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}
-		
+	
 }
