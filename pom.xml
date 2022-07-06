@@ -11,7 +11,7 @@
 
 	<properties>
 		<spring.version>4.2.4.RELEASE</spring.version>
-		<spring.jpa.data.version>1.3.0.RELEASE</spring.jpa.data.version>
+		<spring.jpa.data.version>1.11.23.RELEASE</spring.jpa.data.version>
 	</properties>
 
 	<dependencies>
